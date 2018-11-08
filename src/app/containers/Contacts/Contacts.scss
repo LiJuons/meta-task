@@ -1,0 +1,16 @@
+.contacts-container {
+  height: calc(100% - 91px);
+  width: 100%;
+  min-height: 530px;
+  display: flex;
+  flex-flow: row wrap;
+  align-content: flex-start;
+}
+
+.users-container {
+  flex: 1 100%;
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

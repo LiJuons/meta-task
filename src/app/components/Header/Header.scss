@@ -1,0 +1,160 @@
+$max-white: #FFF;
+$light-blue: rgba(10, 163, 193, 1);
+$light-blue2: rgba(14, 159, 183, 1);
+$dark-green: rgba(27, 60, 67, 1);
+$green-blue: rgba(25, 133, 147, 1);
+$muddy-white: rgba(216, 216, 206, 1);
+$data-gray: rgb(79,77,67);
+$transparent-white1: rgba(255, 255, 255, 0.1);
+$transparent-black1: rgba(0, 0, 0, 0.1);
+$transparent-black2: rgba(0, 0, 0, 0.2);
+
+
+.header-container {
+  position: static;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background : $dark-green;
+  height: 91px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+.header-container-left {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.header-container-right {
+  margin-right: 45px;
+}
+
+.contactify {
+  margin: 33px 50px 0 45px;
+}
+
+.i-svg {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  margin-left: -52px;
+  margin-top: -12px;
+}
+
+.menu {
+  width: 466px;
+  height: 37px;
+  margin-top: 27px;
+  background : -moz-linear-gradient(50% 0% -90deg,$light-blue 0%,$light-blue2 100%);
+  background : -webkit-linear-gradient(-90deg, $light-blue 0%, $light-blue2 100%);
+  background : -webkit-gradient(linear,50% 0% ,50% 100% ,color-stop(0,$light-blue ),color-stop(1,$light-blue2 ));
+  background : -o-linear-gradient(-90deg, $light-blue 0%, $light-blue2 100%);
+  background : -ms-linear-gradient(-90deg, $light-blue 0%, $light-blue2 100%);
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#0AA3C1', endColorstr='#0E9FB7' ,GradientType=0)";
+  background : linear-gradient(180deg, $light-blue 0%, $light-blue2 100%);
+  border-style : Solid;
+  border-color : $max-white;
+  border-color : $transparent-white1;
+  border-width : 1px;
+  border-radius: 30px;
+  box-shadow : 0px 2px 3px $transparent-black2;
+  filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=0, OffY=2, Color='#000000') progid:DXImageTransform.Microsoft.gradient(startColorstr='#0AA3C1',endColorstr='#0E9FB7' , GradientType=0);
+
+  font-size : 15px;
+  text-transform : uppercase;
+  color : $max-white;
+  font-weight: 600;
+
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 20px;
+}
+
+.menu-active {
+  background : $green-blue;
+  box-shadow : inset 0px 0px 3px $transparent-black2;
+  height: 33px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.menu-item {
+  cursor: pointer;
+  flex: 1;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.separator {
+  width: 0;
+  height: 36px;
+  background: $transparent-black1;
+  margin: 0 1px;
+  border-left: solid 1px $transparent-black1;
+  border-right: solid 1px $transparent-white1;
+}
+
+.search-input {
+  width: 224px;
+  margin-top: 27px;
+  margin-left: 15px;
+}
+
+#search-separator {
+  margin-left: -1px;
+  height: 32px;
+}
+
+#search-ico-box {
+  position: absolute;
+  width: 33px;
+  height: 32px;
+  display: inline-block;
+
+  margin-top: 29px;
+  margin-left: -35px;
+
+  border-top-right-radius: 18px;
+  border-bottom-right-radius: 18px;
+
+  background : $muddy-white;
+}
+
+.search-svg {
+  position: absolute;
+  display: inline-block;
+  color: $data-gray;
+  margin-top: -23px;
+  margin-left: 7px;
+}
+
+.dropdown-button {
+  width: 184px;
+  height: 36px;
+  background : $light-blue;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-evenly;
+  cursor: pointer;
+  color: $max-white;
+}
+
+.user-svg {
+  height: 12px;
+  width: 12px;
+  margin-right: -5px;
+}
+
+.cdown-svg {
+  height: 12px;
+  margin-left: 5px;
+}
+

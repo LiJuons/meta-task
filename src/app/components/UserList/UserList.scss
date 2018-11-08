@@ -1,0 +1,126 @@
+$max-white: #FFF;
+$light-blue1: rgba(0, 134, 165, 1);
+$light-blue2: rgba(3, 144, 174, 1);
+$light-blue3: rgba(7, 153, 184, 1);
+$light-blue4: rgba(13, 173, 202, 1);
+$light-blue5: rgba(17, 182, 212, 1);
+$light-blue6: rgba(20, 192, 221, 1);
+$data-gray: rgb(79, 77, 67); 
+$grey-white: rgba(234, 234, 232, 1);
+$transparent-black1: rgba(0, 0, 0, 0.1);
+$transparent-black2: rgba(0, 0, 0, 0.2);
+$transparent-white1: rgba(255, 255, 255, 0.1);
+
+
+.userlist-container {
+  margin-left: 15px;
+  margin-right: 45px;
+  flex: 1;
+  height: 400px;
+  min-width: 860px;
+  background: $max-white;
+  border-radius: 8px;
+  box-shadow: 0 0 2px 2px $transparent-black2;
+}
+
+.column-titles {
+  background: $light-blue6;
+  display: flex;
+  flex-flow: row nowrap;
+  height: 50px;
+  align-items: center;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.contacts-item {
+  height: 43px;
+  font-size : 16px;
+  line-height : 24px;
+  color : $data-gray;
+  border-top: solid 1px $grey-white;
+  display: flex;
+  align-items: center;
+}
+.contacts-item:hover, .contacts-item-selected {
+  background : rgba(10, 163, 193, .1);
+  filter: alpha(opacity=10) progid:DXImageTransform.Microsoft.Alpha(opacity=10) ;
+}
+
+.title-name, .title-surname, .title-city, .title-email, .title-phone {
+  display: flex;
+  height: 100%;
+  padding-right: 15px;
+  align-items: center;
+  justify-content: space-between;
+  border-right: solid 1px $transparent-black1;
+  border-left: solid 1px $transparent-white1;
+  cursor: pointer;
+}
+
+.title-name, .data-name {
+  width: 18.6%;
+}
+.title-name {
+  border-left: none;
+  padding-left: 45px;
+  background : $light-blue1;
+  border-top-left-radius: 7px;
+}
+
+.title-surname, .data-surname {
+  width: 15.2%;
+  padding-left: 20px;
+}
+.title-surname {
+  background : $light-blue2;
+}
+
+.title-city, .data-city {
+  width: 15%;
+  padding-left: 10px;
+}
+.title-city {
+  background : $light-blue3;
+}
+
+.title-email, .data-email {
+  width: 24%;
+  padding-left: 10px;
+}
+.title-email {
+  background : $light-blue4;
+}
+
+.title-phone, .data-phone {
+  display: flex;
+  width: 17.7%;
+  padding-right: 20px;
+  justify-content: flex-end;
+}
+.title-phone {
+  background : $light-blue5;
+  padding-left: 25px;
+}
+
+.filling-title {
+  height: 100%;
+  border-left: solid 1px $transparent-white1;
+}
+
+.arr-down-svg, .eye-svg, .pen-svg, .trash-svg {
+  height: 14px;
+}
+
+.eye-svg {
+  margin-left: 15px;
+  margin-right: 13px;
+}
+
+.pen-svg {
+  margin-right: 20px;
+}
+
+.data-options {
+  padding-left: 15px;
+}

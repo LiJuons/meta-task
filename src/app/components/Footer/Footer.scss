@@ -1,0 +1,117 @@
+$max-white: #FFF;
+$transparent-black1: rgba(0, 0, 0, 0.1);
+$transparent-black2: rgba(0, 0, 0, 0.2);
+$transparent-white1: rgba(255, 255, 255, 0.1);
+
+.footer-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  min-width: 1040px;
+  height: 148px;
+  background : $transparent-black2;
+  filter: alpha(opacity=20) progid:DXImageTransform.Microsoft.Alpha(opacity=20);
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.sectionA {
+  width: 41%;
+  height: 148px;
+  padding-top: 3px;
+  padding-left: 45px;
+  font-size : 15px;
+  line-height : 15px;
+  color : $max-white;
+}
+
+.sectionA-col {
+  margin-top: 14px;
+}
+
+.sectionA-link {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.sectionA-row {
+  display: flex;
+  flex-flow: row nowrap;
+  margin-top: 30px;
+  margin-right: 15px;
+}
+
+.sectionA-row > div {
+  margin-right: 15px;
+}
+
+.sectionB {
+  width: 36.5%;
+  height: 148px;
+  background: $transparent-black2;
+  font-size : 16px;
+  line-height : 21px;
+  color : $max-white;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.sectionB-sync {
+  flex: 1 100%;
+  margin-top: 20px;
+  border-bottom: solid 1px $transparent-black1;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+.sectionB-sync-left, .sectionB-helpdesk  {
+  padding-left: 20px;
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.sectionB-sync-right {
+  margin-right: 35px;
+  margin-top: 10px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.sectionB-helpdesk {
+  flex: 1 100%;
+  padding-top: 15px;
+  border-top: solid 1px $transparent-white1;
+}
+
+.sectionC {
+  width: 22.5%;
+  height: 148px;
+  padding-top: 4px;
+}
+
+.sectionC > div {
+  margin-top: 14px;
+  margin-left: 25px;
+  font-size : 15px;
+  line-height : 15px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.cloud-svg, .stet-svg {
+  zoom: 2;
+  width: 60px;
+  margin-right: 15px;
+  margin-top: 3px;
+}
+
+.stet-svg {
+  margin-left: 4px;
+}
+
+.sync-svg {
+  height: 13px;
+  margin-right: 2px;
+}

@@ -1,0 +1,72 @@
+$max-white: #FFF;
+$light-gray: rgb(207, 208, 195);
+$info-gray: rgb(132, 132, 132);
+$data-gray: rgb(79, 77, 67); 
+$smooth-blue: rgb(16,129,174);
+$smooth-blue2: rgb(16,109,194);
+$transparent-black2: rgba(0, 0, 0, 0.2);
+
+.userinfo-container {
+  height: 400px;
+  width: 225px;
+  margin-left: 45px;
+  background: $max-white;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  box-shadow: 0 0 2px 2px $transparent-black2;
+}
+
+.user-pic {
+  height: 194px;
+  width: 194px;
+  margin-top: 10px;
+  border-radius: 100px;
+  border: solid 5px $light-gray;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-info > div {
+  margin-top: 10px;
+}
+
+.info-type {
+  display: inline-block;
+  width: 60px;
+  font-size : 14px;
+  line-height : 9px;
+  color : $info-gray;
+  text-align: right;
+}
+
+.info-data {
+  display: inline-block;
+  margin-left: 10px;
+  font-size : 14px;
+  line-height : 9px;
+  color : $data-gray;
+  text-align: left;
+  width: 130px;
+}
+
+.info-email {
+  margin-bottom: -3px;
+  line-height: 16px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+a {
+  text-decoration: underline;
+  color: $smooth-blue;
+}
+a:hover{
+  color: $smooth-blue2;
+}

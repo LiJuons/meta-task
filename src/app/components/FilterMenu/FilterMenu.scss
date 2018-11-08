@@ -1,0 +1,124 @@
+$dark-green: rgb(28,107,105);
+$dense-green: rgba(33, 127, 122, 1);
+$dark-grey: rgb(58,60,50);
+$max-white: #FFF;
+$transparent-black1: rgba(0,0,0, 0.1);
+$transparent-black2: rgba(0,0,0, 0.2);
+$transparent-white1: rgba(255, 255, 255, 0.1);
+$transparent-muddy-white: rgba(234, 234, 232, .3);
+
+.filterMenu-container {
+  flex: 1 100%;
+  min-width: 1020px;
+  margin-top: 20px;
+}
+
+#filter-name {
+  border-radius: 30px;
+  width: 220px;
+  margin-left: 45px;
+}
+
+#filter-city {
+  width: 160px;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0px;
+  border-radius: 18px;
+  margin-left: 20px;
+}
+
+.select-svg {
+  color: $dark-grey;
+  height: 14px;
+  margin-left: -23px;
+}
+
+#filter-active {
+  position: absolute;
+  margin-top: 15px;
+  -webkit-appearance: none;
+  border-radius: 5px;
+  border-width: 3px;
+  height: 30px;
+  zoom: .6;
+  cursor: pointer;
+}
+
+.active-check-box {
+  margin-left: 40px;
+  display: inline;
+}
+
+.checkmark {
+  position: absolute;
+  margin: 13px 1px;
+  height: 10px;
+  width: 10px;
+  color: $dark-green;
+  cursor: pointer;
+}
+
+.active-check-box > label {
+  margin-left: 23px;
+}
+
+.filter-button {
+  width: 106px;
+  height: 35px;
+  margin-left: 30px;
+  background: none;
+  font-size : 15px;
+  color: $max-white;
+  font-weight: 600;
+  cursor: pointer;
+  border-style : Solid;
+  border-color : $transparent-muddy-white;
+  border-width : 2px;
+  box-shadow : 0px 2px 3px $transparent-black2;
+  filter: alpha(opacity=30) progid:DXImageTransform.Microsoft.Alpha(opacity=30) progid:DXImageTransform.Microsoft.dropshadow(OffX=0, OffY=2, Color='#000000') ;
+}
+.filter-button:active {
+  box-shadow: 0 0 1px 1px $transparent-black2;
+  background: $transparent-black1;
+}
+
+.add-button {
+  float: right;
+  margin-right: 45px;
+  height: 37px;
+  width: 224px;
+  background : $dense-green;
+  box-shadow : 0px 2px 3px $transparent-black2;
+  filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=0, OffY=2, Color='#000000') ;
+  border: none;
+  border-radius: 18px;
+  color: $max-white;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.add-button:active {
+  box-shadow: 0 0 1px 2px $transparent-black2;
+  background: $transparent-white1;
+}
+
+.add-button-plus {
+  margin-left: 5px;
+  margin-right: 15px;
+  width: 26px;
+  height: 26px;
+  background : $transparent-black1;
+  filter: alpha(opacity=20) progid:DXImageTransform.Microsoft.Alpha(opacity=20);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+}
+
+.plus-svg {
+  height: 12px;
+  width: 12px;
+}
